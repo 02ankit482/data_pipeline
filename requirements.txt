@@ -1,0 +1,14 @@
+pandas 
+mlflow
+notebook
+numpy
+scikit-learn
+matplotlib
+python_box
+pyYaml
+tqdm
+ensure
+joblib
+types-pyYaml
+flask
+flask-cors
