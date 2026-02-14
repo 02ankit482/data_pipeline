@@ -1,1 +1,1 @@
-this repository is fo practicing end to end datapipeline industry standards
+this repository is for practicing end to end datapipeline industry standards
