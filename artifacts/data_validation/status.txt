@@ -1,0 +1,1 @@
+Column Embarked is in the schema. hence validation Status is True
