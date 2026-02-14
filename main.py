@@ -4,6 +4,7 @@ logger.info("Starting the main application...")
 
 from src.data_line.pipeline.dataingestion import DataIngestionPipeline
 from src.data_line.pipeline.datavalidation import DataValidationPipeline
+from src.data_line.pipeline.datatransformation import DataTransformationPipeline        
 
 STATE_NAME = "data_ingestion"
 
@@ -24,5 +25,13 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e      
-
+STATE_NAME = "data_transformation"
+try:
+    logger.info(f"{'>>'*20} Stage {STATE_NAME} started. {'<<'*20}")
+    data_transformation_pipeline = DataTransformationPipeline()
+    data_transformation_pipeline.initiate_data_transformation_pipeline()
+    logger.info(f"{'>>'*20} Stage {STATE_NAME} completed. {'<<'*20}")
+except Exception as e:
+    logger.exception(e)
+    raise e
 

@@ -14,3 +14,7 @@ class DataValidationConfig:
     data_dir: Path
     report_file: str
     all_schema:dict    
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_dir: Path
